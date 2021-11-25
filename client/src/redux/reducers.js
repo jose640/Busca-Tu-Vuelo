@@ -1,7 +1,7 @@
 import { AEREOLINEAS } from "./types";
 
 const initialState = {
-  aereolinea: {},
+  aereolinea: [],
 };
 
 export function aereolineaReducer(state = initialState, action) {

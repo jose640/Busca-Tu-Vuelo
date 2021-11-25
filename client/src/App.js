@@ -3,6 +3,7 @@ import { Provider } from "react-redux";
 import generarStore from "./Store";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import { NavBar } from "./components/NavBar";
+import { Lines } from "./components/Lines";
 
 function App() {
   const store = generarStore();
@@ -11,7 +12,7 @@ function App() {
       <Router>
         <NavBar />
         <Switch>
-          <Route />
+          <Route exact path="/aereolineas" component={Lines} />
         </Switch>
       </Router>
     </Provider>
